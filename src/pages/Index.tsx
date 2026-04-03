@@ -14,10 +14,8 @@ const RELEASES = [
 ];
 
 const MERCH = [
-  { id: 1, title: "HELLRAISER HOODIE", price: "4 500 ₽", desc: "Чёрный оверсайз худи" },
-  { id: 2, title: "RITUAL TEE", price: "2 200 ₽", desc: "Футболка с принтом" },
-  { id: 3, title: "CHAOS CAP", price: "1 800 ₽", desc: "Кепка пятипанельная" },
-  { id: 4, title: "VINYL SET", price: "3 600 ₽", desc: "Виниловый комплект" },
+  { id: 1, title: "HellRaiSeR", price: "2 000 ₽", desc: "Чёрная футболка с принтом", img: "https://cdn.poehali.dev/projects/9515749e-1233-4a8d-8803-5a1b96e32458/bucket/6068440e-70cb-4622-b3c7-d643854145e4.jpg" },
+  { id: 2, title: "NEMETON", price: "1 700 ₽", desc: "Чёрная футболка с принтом", img: "https://cdn.poehali.dev/projects/9515749e-1233-4a8d-8803-5a1b96e32458/bucket/94410f7f-08e2-4d6a-a7f1-b687eeeeb3ed.jpg" },
 ];
 
 const SOCIALS = [
@@ -276,9 +274,9 @@ export default function Index() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {MERCH.map((item) => (
             <div key={item.id} className="group cursor-pointer">
-              <div className="relative overflow-hidden mb-4 bg-surface aspect-square flex items-center justify-center border border-white/5 group-hover:border-crimson/30 transition-all duration-300">
-                <Icon name="ShoppingBag" size={40} className="text-ghost/10 group-hover:text-crimson/30 transition-colors duration-300" />
-                <div className="absolute inset-0 bg-crimson/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="relative overflow-hidden mb-4 aspect-square border border-white/5 group-hover:border-crimson/30 transition-all duration-300">
+                <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-crimson/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <div className="font-display text-sm tracking-[0.15em] text-ghost mb-1">{item.title}</div>
               <div className="font-body text-xs text-ghost/40 mb-2">{item.desc}</div>
