@@ -4,18 +4,13 @@ import Icon from "@/components/ui/icon";
 const ARTIST_IMAGE = "https://cdn.poehali.dev/projects/9515749e-1233-4a8d-8803-5a1b96e32458/files/bb729f2f-cb8c-4bee-8444-eee4f50357ce.jpg";
 
 const TRACKS = [
-  { id: 1, title: "HELLFIRE", duration: "3:42", plays: "128K" },
-  { id: 2, title: "DARK RITUALS", duration: "4:15", plays: "94K" },
-  { id: 3, title: "BEYOND THE VEIL", duration: "5:01", plays: "76K" },
-  { id: 4, title: "CHAOS THEORY", duration: "3:28", plays: "211K" },
-  { id: 5, title: "NEON ABYSS", duration: "4:55", plays: "58K" },
+  { id: 1, title: "Твоя любовь показуха", duration: "—", vk: "https://vk.ru/audio870066396_456239595_22b19b10a907859aa5", yandex: "https://music.yandex.ru/search?text=твоя+любовь+показуха+hellraiser" },
+  { id: 2, title: "Генератор идей", duration: "—", vk: "https://vk.com/music/search?q=генератор+идей+hellraiser", yandex: "https://music.yandex.ru/search?text=генератор+идей+hellraiser" },
 ];
 
 const RELEASES = [
-  { id: 1, title: "INFERNO EP", year: "2024", type: "EP", tracks: 5 },
-  { id: 2, title: "RITUAL SINGLE", year: "2024", type: "СИНГЛ", tracks: 1 },
-  { id: 3, title: "DARK MATTER", year: "2023", type: "АЛЬБОМ", tracks: 12 },
-  { id: 4, title: "CHAOS NIGHTS", year: "2023", type: "EP", tracks: 6 },
+  { id: 1, title: "Твоя любовь показуха", year: "2025", type: "СИНГЛ", tracks: 1 },
+  { id: 2, title: "Генератор идей", year: "2025", type: "СИНГЛ", tracks: 1 },
 ];
 
 const MERCH = [
@@ -26,16 +21,13 @@ const MERCH = [
 ];
 
 const SOCIALS = [
-  { name: "VK", handle: "@hellraiser", icon: "Music" },
-  { name: "Telegram", handle: "t.me/hellraiser", icon: "Send" },
-  { name: "YouTube", handle: "HellRaiSeR Official", icon: "Youtube" },
-  { name: "Spotify", handle: "HellRaiSeR", icon: "Radio" },
+  { name: "VK Музыка", handle: "HellRaiSeR", icon: "Music", url: "https://vk.ru/audio870066396_456239595_22b19b10a907859aa5" },
+  { name: "Яндекс Музыка", handle: "HellRaiSeR", icon: "Radio", url: "https://music.yandex.ru/search?text=hellraiser" },
+  { name: "Telegram", handle: "Написать артисту", icon: "Send", url: "#" },
 ];
 
 const COMMENTS_INIT = [
-  { id: 1, user: "Алексей М.", text: "Лучший трек года — CHAOS THEORY просто снёс голову", time: "2 часа назад" },
-  { id: 2, user: "Дарья К.", text: "На концерте в Москве был — это что-то невероятное", time: "1 день назад" },
-  { id: 3, user: "Максим П.", text: "Жду новый альбом, каждый релиз — шедевр", time: "3 дня назад" },
+  { id: 1, user: "Слушатель", text: "«Твоя любовь показуха» — зацепило с первых секунд", time: "недавно" },
 ];
 
 const NAV_ITEMS = ["ГЛАВНАЯ", "О АРТИСТЕ", "РЕЛИЗЫ", "МЕРЧ", "СОЦСЕТИ"];
@@ -143,7 +135,7 @@ export default function Index() {
               <span className="text-crimson">RAI</span>SeR
             </h1>
             <p className="font-body text-ghost/60 text-lg mb-10 max-w-md">
-              Электронная музыка на грани реальности.<br />Тёмные ритмы. Живые эмоции.
+              Начинающий артист. Разные стили.<br />Честные эмоции в каждом треке.
             </p>
             <div className="flex gap-4">
               <button
