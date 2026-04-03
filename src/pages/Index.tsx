@@ -165,16 +165,16 @@ export default function Index() {
             </h2>
             <div className="space-y-4 text-ghost/60 font-body leading-relaxed">
               <p>
-                HellRaiSeR — электронный музыкант, работающий на пересечении dark electronic, industrial и ambient.
-                Более 8 лет создаёт звуки, которые невозможно игнорировать.
+                HellRaiSeR — музыкант, который создаёт целые миры внутри своего воображения
+                и переносит их в треки. Каждый релиз — отдельная вселенная со своей атмосферой и историей.
               </p>
               <p>
-                Каждый трек — это путешествие в пространство между сознанием и хаосом.
-                Живые выступления превращаются в ритуал.
+                Свободно работает в разных стилях: от лиричного до жёсткого,
+                от электронного до живого. Никаких рамок — только честный звук.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-6 mt-10">
-              {[["8+", "ЛЕТ"], ["500K+", "СЛУШАТЕЛЕЙ"], ["3", "АЛЬБОМА"]].map(([num, label]) => (
+              {[["6", "МЕСЯЦЕВ"], ["10K+", "СЛУШАТЕЛЕЙ"], ["2", "СИНГЛА"]].map(([num, label]) => (
                 <div key={label} className="border-t border-crimson/30 pt-4">
                   <div className="font-display text-3xl font-bold text-crimson">{num}</div>
                   <div className="font-display text-xs tracking-[0.2em] text-ghost/40 mt-1">{label}</div>
