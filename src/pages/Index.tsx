@@ -309,7 +309,7 @@ export default function Index() {
             {SOCIALS.map((s) => (
               <div key={s.name} className="group flex items-center gap-4 p-6 border border-white/10 hover:border-crimson/40 cursor-pointer transition-all duration-300 hover:bg-crimson/5">
                 <div className="w-10 h-10 border border-white/10 group-hover:border-crimson/40 flex items-center justify-center transition-all duration-300">
-                  <Icon name={s.icon as any} size={18} className="text-ghost/40 group-hover:text-crimson transition-colors" />
+                  <Icon name={s.icon} fallback="Music" size={18} className="text-ghost/40 group-hover:text-crimson transition-colors" />
                 </div>
                 <div>
                   <div className="font-display text-sm tracking-wider text-ghost">{s.name}</div>
@@ -361,7 +361,7 @@ export default function Index() {
           <div className="flex gap-4">
             {SOCIALS.map((s) => (
               <button key={s.name}>
-                <Icon name={s.icon as any} size={16} className="text-ghost/20 hover:text-crimson transition-colors" />
+                <Icon name={s.icon} fallback="Music" size={16} className="text-ghost/20 hover:text-crimson transition-colors" />
               </button>
             ))}
           </div>

@@ -19,7 +19,16 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				display: ['Oswald', 'sans-serif'],
+				body: ['IBM Plex Sans', 'sans-serif'],
+			},
 			colors: {
+				void: '#0a0a0a',
+				surface: '#111111',
+				ghost: '#f0ece6',
+				crimson: '#dc2626',
+				'crimson-light': '#ef4444',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
