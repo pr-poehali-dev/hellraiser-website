@@ -22,7 +22,7 @@ const MERCH = [
 
 const SOCIALS = [
   { name: "VK Музыка", handle: "HellRaiSeR", icon: "Music", url: "https://vk.ru/audio870066396_456239595_22b19b10a907859aa5" },
-  { name: "Яндекс Музыка", handle: "HellRaiSeR", icon: "Radio", url: "https://music.yandex.ru/search?text=hellraiser" },
+  { name: "Яндекс Музыка", handle: "HellRaiSeR", icon: "Radio", url: "https://music.yandex.ru/artist/18746041" },
   { name: "Telegram", handle: "Написать артисту", icon: "Send", url: "#" },
 ];
 
@@ -299,7 +299,7 @@ export default function Index() {
           <h2 className="font-display text-4xl font-bold text-ghost mb-12">СОЦСЕТИ</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {SOCIALS.map((s) => (
-              <div key={s.name} className="group flex items-center gap-4 p-6 border border-white/10 hover:border-crimson/40 cursor-pointer transition-all duration-300 hover:bg-crimson/5">
+              <a key={s.name} href={s.url} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 p-6 border border-white/10 hover:border-crimson/40 cursor-pointer transition-all duration-300 hover:bg-crimson/5">
                 <div className="w-10 h-10 border border-white/10 group-hover:border-crimson/40 flex items-center justify-center transition-all duration-300">
                   <Icon name={s.icon} fallback="Music" size={18} className="text-ghost/40 group-hover:text-crimson transition-colors" />
                 </div>
@@ -308,7 +308,7 @@ export default function Index() {
                   <div className="font-body text-xs text-ghost/40">{s.handle}</div>
                 </div>
                 <Icon name="ArrowRight" size={14} className="ml-auto text-ghost/20 group-hover:text-crimson transition-all duration-300 group-hover:translate-x-1" />
-              </div>
+              </a>
             ))}
           </div>
         </div>
