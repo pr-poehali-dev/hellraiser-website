@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import Icon from "@/components/ui/icon";
 
-const ARTIST_IMAGE = "https://cdn.poehali.dev/projects/9515749e-1233-4a8d-8803-5a1b96e32458/files/bb729f2f-cb8c-4bee-8444-eee4f50357ce.jpg";
+const ARTIST_IMAGE = "https://cdn.poehali.dev/projects/9515749e-1233-4a8d-8803-5a1b96e32458/bucket/db27f000-e913-4b2c-8b33-3369fb9a4a30.jpg";
 
 const TRACKS = [
   { id: 1, title: "Твоя любовь показуха", duration: "—", vk: "https://vk.ru/audio870066396_456239595_22b19b10a907859aa5", yandex: "https://music.yandex.ru/search?text=твоя+любовь+показуха+hellraiser" },
