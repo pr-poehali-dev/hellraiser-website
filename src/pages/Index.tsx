@@ -21,7 +21,8 @@ const MERCH = [
 ];
 
 const SOCIALS = [
-  { name: "VK Музыка", handle: "HellRaiSeR", icon: "Music", url: "https://vk.ru/audio870066396_456239595_22b19b10a907859aa5" },
+  { name: "VK Музыка", handle: "HellRaiSeR", icon: "Music", url: "https://vk.ru/artist/2013803555781364838" },
+  { name: "VK Сообщество", handle: "vk.ru/hellraisermusic", icon: "Users", url: "https://vk.ru/hellraisermusic" },
   { name: "Яндекс Музыка", handle: "HellRaiSeR", icon: "Radio", url: "https://music.yandex.ru/artist/18746041" },
   { name: "Telegram", handle: "Написать артисту", icon: "Send", url: "#" },
 ];
